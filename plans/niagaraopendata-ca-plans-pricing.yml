@@ -1,0 +1,38 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Niagara Open Data
+providerId: niagaraopendata-ca
+created: '2026-06-04'
+modified: '2026-06-04'
+reconciled: false
+tags:
+- Open Data
+- CKAN
+- Plans
+description: >-
+  Niagara Open Data is a public open-data portal. Its catalog API is offered free of charge for
+  public, programmatic access; no commercial plan or paid tier applies. Bulk or
+  high-volume harvesting should be done politely and may be subject to fair-use limits.
+notes: Free / open public data API. No commercial pricing.
+sources:
+- https://raw.githubusercontent.com/api-evangelist/niagaraopendata-ca/refs/heads/main/apis.yml
+plans:
+- id: niagaraopendata-ca-open
+  name: Free / Open Data
+  type: free
+  description: Public open-data catalog API offered at no charge.
+  entries:
+  - label: Open API Access
+    name: open_api_access
+    type: free
+    metric: requests
+    limit: -1
+    timeFrame: usage
+    geo: global
+    unit: 1
+    price: '0.00'
+    userMultiplied: false
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

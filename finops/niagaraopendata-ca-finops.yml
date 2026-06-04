@@ -1,0 +1,33 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: Niagara Open Data
+providerId: niagaraopendata-ca
+created: '2026-06-04'
+modified: '2026-06-04'
+reconciled: false
+tags:
+- Open Data
+- CKAN
+- FinOps
+description: >-
+  FinOps profile for Niagara Open Data. As a public open-data portal, its catalog API carries no
+  usage-based billing; there is no invoiced cost to allocate or optimize.
+notes: No usage-based API billing; public open data.
+sources:
+- https://raw.githubusercontent.com/api-evangelist/niagaraopendata-ca/refs/heads/main/apis.yml
+- https://www.finops.org/framework/
+publisherName: Niagara Open Data
+serviceCategory: Open Data
+billingModel:
+  pricingCategory: Free / Public
+  billingFrequency: None
+  billingCurrency: N/A
+  chargeCategories:
+  - Usage
+principles:
+- name: Optimization
+  description: Harvest efficiently (pagination, OAI-PMH, bulk dumps) to reduce load.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

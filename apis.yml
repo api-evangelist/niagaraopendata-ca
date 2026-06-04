@@ -1,0 +1,58 @@
+aid: niagaraopendata-ca
+name: Niagara Open Data
+description: >-
+  Niagara Open Data is a county government open-data portal for Canada running CKAN.
+  It exposes the CKAN catalog API, a standardized machine-readable interface over approximately 529 datasets,
+  supporting programmatic dataset search, metadata retrieval, and resource access. Because it runs CKAN, it shares a
+  consistent API surface with every other CKAN portal, making it uniformly harvestable and integrable.
+kind: government
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/niagaraopendata-ca/refs/heads/main/apis.yml
+tags:
+  - Open Data
+  - CKAN
+  - Data Catalog
+  - DCAT
+  - Government Data
+  - County Government
+  - Canada
+created: '2026-06-04'
+modified: '2026-06-04'
+specificationVersion: '0.19'
+apis:
+  - aid: niagaraopendata-ca:catalog
+    name: Niagara Open Data CKAN Action API
+    description: >-
+      CKAN Action API for Niagara Open Data, a consistent JSON-over-HTTP interface over a catalog of 529 datasets. Standard actions include package_search, package_show, package_list, organization_list, group_list, tag_list, and resource_search; datastore_search is available where the DataStore extension is enabled. Base URL https://niagaraopendata.ca/api/3/action/.
+    humanURL: https://niagaraopendata.ca
+    baseURL: https://niagaraopendata.ca/api/3/action
+    tags:
+      - CKAN
+      - Action API
+      - Open Data
+      - Catalog
+      - REST
+      - JSON
+    properties:
+      - type: Documentation
+        url: https://docs.ckan.org/en/latest/api/
+      - type: Website
+        url: https://niagaraopendata.ca
+      - type: x-api-endpoint
+        url: https://niagaraopendata.ca/api/3/action/status_show
+common:
+  - type: Website
+    url: https://niagaraopendata.ca
+  - type: Documentation
+    url: https://docs.ckan.org/en/latest/api/
+  - type: Plans
+    url: plans/niagaraopendata-ca-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/niagaraopendata-ca-rate-limits.yml
+  - type: FinOps
+    url: finops/niagaraopendata-ca-finops.yml
+  - type: Review
+    url: review.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

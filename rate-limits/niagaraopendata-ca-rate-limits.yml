@@ -1,0 +1,33 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: Niagara Open Data
+providerId: niagaraopendata-ca
+created: '2026-06-04'
+modified: '2026-06-04'
+reconciled: false
+tags:
+- Open Data
+- CKAN
+- Rate Limiting
+description: >-
+  Niagara Open Data does not publish a formal rate-limit table for its open-data catalog API. Clients
+  should paginate (rows/limit + start/offset), harvest politely, honor Retry-After, and use
+  OAI-PMH or bulk endpoints for large extracts.
+notes: No published limit; harvest responsibly.
+sources:
+- https://raw.githubusercontent.com/api-evangelist/niagaraopendata-ca/refs/heads/main/apis.yml
+responseCodes:
+  throttled: 429
+limits:
+- name: Default
+  scope: client
+  metric: requests-per-minute
+  limit: see portal documentation
+  notes: No published global limit.
+policies:
+- name: Backoff Strategy
+  description: Exponential backoff with jitter; honor Retry-After.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
