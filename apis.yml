@@ -6,7 +6,7 @@ description: >-
   supporting programmatic dataset search, metadata retrieval, and resource access. Because it runs CKAN, it shares a
   consistent API surface with every other CKAN portal, making it uniformly harvestable and integrable.
 kind: government
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/niagaraopendata-ca/refs/heads/main/apis.yml
 tags:
   - Open Data
