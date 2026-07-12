@@ -1,0 +1,16 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: niagaraopendata.ca
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 25 21:45:45 2026 GMT
+  hsts: false
+domains:
+- domain: niagaraopendata.ca
+  dnssec: true
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none

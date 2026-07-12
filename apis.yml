@@ -41,6 +41,8 @@ apis:
       - type: x-api-endpoint
         url: https://niagaraopendata.ca/api/3/action/status_show
 common:
+  - type: DomainSecurity
+    url: security/niagaraopendata-ca-domain-security.yml
   - type: Website
     url: https://niagaraopendata.ca
   - type: Documentation
