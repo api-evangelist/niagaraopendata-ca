@@ -6,6 +6,17 @@ description: >-
   supporting programmatic dataset search, metadata retrieval, and resource access. Because it runs CKAN, it shares a
   consistent API surface with every other CKAN portal, making it uniformly harvestable and integrable.
 kind: government
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: free
   onboarding: unknown
